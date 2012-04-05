@@ -167,6 +167,10 @@ a:hover {
 .navbar-fixed-bottom .container {
   width: 940px;
 }
+
+.navbar-fixed-brand {
+    position:fixed;
+}
 .span12 {
   width: 940px;
 }
@@ -339,16 +343,16 @@ margin-bottom: 9px;
 font-size: 81px;
 font-weight: normal;
 letter-spacing: -1px;
-line-height: 1;
+line-height: 70px;
 text-align: right;
 letter-spacing: -0.1em; 
 }
 
 .lead {
   margin-bottom: 18px;
-  font-size: 23px;
+  font-size: 18px;
   font-weight: 200;
-  line-height: 38px;
+  line-height: 30px;
 }
 h1,
 h2,
@@ -2495,6 +2499,7 @@ input[type="submit"].btn.btn-mini {
 }
 .nav > li > a:hover {
   text-decoration: none;
+  border: 0px;
   background-color: #eeeeee;
 }
 .nav .nav-header {
@@ -2606,7 +2611,7 @@ input[type="submit"].btn.btn-mini {
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
   color: #ffffff;
-  background-color: #0088cc;
+  background-color: #fbb450;
 }
 .nav-stacked > li {
   float: none;
