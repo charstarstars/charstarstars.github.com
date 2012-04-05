@@ -132,7 +132,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: Gotham, Helvetica, Arial, sans-serif;
+  font-family: 'Muli', Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #333333;
@@ -326,7 +326,7 @@ a:hover {
 }
 p {
   margin: 0 0 9px;
-  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Muli', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -342,10 +342,9 @@ font-size: 54px;
 margin-bottom: 9px;
 font-size: 81px;
 font-weight: normal;
-letter-spacing: -1px;
 line-height: 70px;
 text-align: right;
-letter-spacing: -0.1em; 
+letter-spacing: -0.09em; 
 }
 
 .lead {
