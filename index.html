@@ -1,70 +1,81 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>You found me!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8" />
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
 
-	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-	<title>Oh good, you made it here.</title>
-  
-	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="stylesheets/foundation.css">
-	<link rel="stylesheet" href="stylesheets/app.css">
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
 
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" href="stylesheets/ie.css">
-	<![endif]-->
-
-
-	<!-- IE Fix for HTML5 Tags -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-</head>
-<body>
-
-	<!-- container -->
-	<div class="container">
-
-		<div class="row"> 
-			<div class="twelve columns">
-				<dl class="nice tabs">
-			  		<dd><h2>Ariel Liu</h2></dd>
-					<dd><a href="#about" class="active">about</a></dd>
-			  		<dd><a href="#art">art</a></dd>
-			  		<dd><a href="#design">design</a></dd>
-			  		<dd><a href="#code">code</a></dd>
-				</dl>
+  <body>
+    <div class="container">
+		<div class="row">
+			<div class="span2">
+				<header class="jumbotron subhead">
+				<h1>Ariel Liu</h1>
+				</header>
 			</div>
-			<br /><br />
-			<ul class="nice tabs-content ">
-   		  		<li class="active" id="aboutTab">
-					<p>Hi! I'm Ariel, a junior in Computer Science with a minor in Art at Carnegie Mellon University.
-						</p></li>
-   				<li id="artTab">I do digital drawings mostly in Photoshop with some stuff in Illustrator too</li>
-   		  		<li id="codeTab">I'm a Computer Science major which means I tend to spend a lot of time coding away...</li>
-   				<li id="designTab">I love user interface design and prototyping. It's quite fun</li>
-   			</ul>
+			<div class="span6">
+				
+						<p class="lead">I'm a <a href="code.html">Computer Science</a> 
+							major and <a href="drawing.html">Art</a> minor at 
+							<a href="http://www.cmu.edu">Carnegie Mellon University</a> 
+							graduating in May 2013. I like building <a href="design.html">interfaces</a>, 
+							messing around with cameras and <a href="video.html">video</a>, and 
+							<a href="crochet.html">crocheting</a>.
+						</p>
+			</div>
 		</div>
-
+		<div class="row">
+			<div class="span6 offset2">
+				<a class="btn btn-large btn-warning" href="who.html">Who I am</a>
+				<a class="btn btn-large btn-warning" href="projects.html">What I've done</a>
+				<a class="btn btn-large btn-warning" href="resume.html">Resume</a>
+				<a class="btn btn-large btn-warning" href="contact.html">Contact</a>
+				</div>
+		
 	</div>
-	<!-- container -->
 
+    </div> <!-- /container -->
 
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
 
-
-	<!-- Included JS Files -->
-	<script src="javascripts/jquery.min.js"></script>
-	<script src="javascripts/modernizr.foundation.js"></script>
-	<script src="javascripts/foundation.js"></script>
-	<script src="javascripts/app.js"></script>
-
-</body>
+  </body>
 </html>
