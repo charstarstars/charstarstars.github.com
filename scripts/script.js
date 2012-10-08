@@ -2,23 +2,18 @@ function makeLightbox() {
     // var galleries = $(".galleryItem");
     $(".galleryItem").each(function() {
         $(this).click(function() {
-            var galleryItem = $(this)
-            var galleryImage = galleryItem.find(".fullImage").clone();
-            var description = galleryItem.find(".description").clone();
-
-            displayItem(galleryItem, galleryImage,description);
+            displayItem($(this));
         });
     });
 }
 
-function displayItem(galleryItem, galleryImage, description) {
+function displayItem(galleryItem) {
     var frame = $("<div></div>");
+    var galleryImage = galleryItem.find(".fullImage").clone();
+    var description = galleryItem.find(".description").clone();
     var backdrop = $("#backdrop");
     var frameWidth;
     
-    galleryImage.removeClass("hidden");
-
-    backdrop.removeClass("hidden");
     backdrop.append(frame);
     frame.append(description); 
 
@@ -28,6 +23,11 @@ function displayItem(galleryItem, galleryImage, description) {
     frame.addClass("galleryItem");
     frame.addClass("expanded");
     frame.append(galleryImage);
+
+    galleryImage.removeClass("hidden");
+
+    backdrop.removeClass("hidden");
+    
     frame.css("height", galleryImage.height());
     frameWidth = galleryImage.width() + $(".description.expanded").width() + 20;
     frame.css("width", frameWidth);
