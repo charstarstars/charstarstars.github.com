@@ -9,11 +9,25 @@ body {
     font-style: normal;
     font-size: 20px;
     letter-spacing: -1px;
-    color: #666;
-    background-color: #f1f1f1;
+    color: #777;
+    background-color: #f3f3f3;
 }
+
+p a {
+    text-decoration: none;
+    color: #FF8500;
+}
+
+p a:hover {
+
+    border-bottom: dotted;
+    border-color: #FF8500;
+    border-width: 1px;
+}
+
 header {
     display: block;
+    opacity: .9;
     width: 100%;
     background-color: #fff;
     position: fixed;
@@ -24,7 +38,7 @@ header {
 
 header a {
     display: inline-block;
-    color: #f1f1f1;
+    color: #f3f3f3;
     margin: 12px;
     font-size: 20px;
     font-style: normal;
@@ -32,12 +46,13 @@ header a {
     text-decoration: none;
     width: 150px;
 }
+
 header a .highlight {
     color: #FF8500;
 }
 
 header a:hover {
-    color: #999;
+    color: #777;
 }
 
 /*************************************
@@ -51,9 +66,8 @@ header a:hover {
 }
 
 #content .section {
-    padding-top: 100px;
+    padding-top: 50px;
     min-height: 1000px;
-
 }
 
 h1 {
@@ -103,9 +117,6 @@ h2 {
     fluid layout stuff
 *************************************/
 
-@media screen and (max-width: 1200px) {
-
-}
 
 @media screen and (max-width: 900px) {
     header a {
@@ -117,11 +128,19 @@ h2 {
         margin-left: 5%;
         margin-right: 5%;
     }
+
     h1 {
         font-size: 54px;
     }
     h2 {
         font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    #content .section {
+        padding-top: 100px;
     }
 }
 
