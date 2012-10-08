@@ -15,6 +15,10 @@ function displayItem(galleryItem) {
     var frameWidth;
     
     galleryImage.removeClass("hidden");
+    if(galleryImage.height() > window.innerWidth) {
+      galleryImage.attr('height',(window.innerWidth - 100));
+      galleryImage.css('width', "auto");
+    }
 
     backdrop.removeClass("hidden");
     backdrop.append(frame);
