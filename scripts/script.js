@@ -15,7 +15,7 @@ function displayItem(galleryItem) {
     var frameWidth;
     
     galleryImage.removeClass("hidden");
-    
+
     backdrop.removeClass("hidden");
     backdrop.append(frame);
     frame.append(description); 
@@ -29,8 +29,8 @@ function displayItem(galleryItem) {
     frame.css("height", galleryImage.height());
     frameWidth = galleryImage.width() + $(".description.expanded").width() + 20;
     frame.css("width", frameWidth);
-    frame.css("margin-top", -parseInt(frame.css("height"),10)/2);
-    frame.css("margin-left", -parseInt(frameWidth,10)/2);
+    frame.css("margin-top", -frame.height()/2);
+    frame.css("margin-left", -frameWidth/2);
     frame.css("opacity", "1");
     frame.click(function(event) {
       event.stopPropagation();
