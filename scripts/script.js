@@ -1,3 +1,37 @@
+function makeLightbox() {
+    // var galleries = $(".galleryItem");
+    $(".galleryItem").each(function() {
+        $(this).click(function() {
+            displayItem($(this));
+        });
+    });
+}
+
+function displayItem(galleryItem) {
+    var frame = $("<div></div>");
+    var galleryImage = galleryItem.find("img").clone();
+    var description = galleryItem.find(".description").clone();
+    var backdrop = $("#backdrop");
+    var frameWidth;
+    
+    backdrop.removeClass("hidden");
+    backdrop.append(frame);
+    frame.append(description); 
+
+    description.removeClass("hidden");
+    description.addClass("expanded");
+
+    frame.addClass("galleryItem");
+    frame.addClass("expanded");
+    frame.append(galleryImage);
+    frame.css("height", galleryImage.height());
+    frameWidth = galleryImage.width() + $(".description.expanded").width() + parseInt(frame.css('padding'));
+    frame.css("width", frameWidth);
+    frame.css("margin-top", -parseInt(frame.css("height"),10)/2);
+    frame.css("margin-left", -parseInt(frameWidth,10)/2);
+    frame.css("opacity", "1");
+}
+
 $(document).ready(function() {
   function filterPath(string) {
   return string
@@ -44,6 +78,10 @@ $(document).ready(function() {
     }
     return [];
   }
- 
-});
+  makeLightbox();
 
+  $("#backdrop").click(function(event) {
+    $(this).empty();
+    $(this).addClass("hidden");
+  });
+});
