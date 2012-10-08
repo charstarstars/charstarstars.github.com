@@ -13,7 +13,7 @@ function displayItem(galleryItem) {
     var description = galleryItem.find(".description").clone();
     var backdrop = $("#backdrop");  
     var frameWidth;
-    
+
     backdrop.append(frame);
     frame.append(description); 
     frame.append(galleryImage);
@@ -26,15 +26,17 @@ function displayItem(galleryItem) {
     galleryImage.removeClass("hidden");
     backdrop.removeClass("hidden");
 
-    frame.css("height", galleryItem.find(".fullImage").height());
-    frameWidth = galleryItem.find(".fullImage").width() + $(".description.expanded").width() + 20;
-    frame.css("width", frameWidth);
-    frame.css("margin-top", -frame.height()/2);
-    frame.css("margin-left", -frameWidth/2);
-    frame.css("opacity", "1");
-    frame.click(function(event) {
-      event.stopPropagation();
-    });
+    setTimeout(function() {
+        frame.css("height", galleryImage.height());
+        frameWidth = galleryImage.width() + $(".description.expanded").width() + 20;
+        frame.css("width", frameWidth);
+        frame.css("margin-top", -frame.height()/2);
+        frame.css("margin-left", -frameWidth/2);
+        frame.css("opacity", "1");
+        frame.click(function(event) {
+          event.stopPropagation();
+        });
+    }, 0);
 }
 
 $(document).ready(function() {
