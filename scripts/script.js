@@ -9,11 +9,13 @@ function makeLightbox() {
 
 function displayItem(galleryItem) {
     var frame = $("<div></div>");
-    var galleryImage = galleryItem.find("img").clone();
+    var galleryImage = galleryItem.find(".fullImage").clone();
     var description = galleryItem.find(".description").clone();
     var backdrop = $("#backdrop");
     var frameWidth;
     
+    galleryImage.removeClass("hidden");
+
     backdrop.removeClass("hidden");
     backdrop.append(frame);
     frame.append(description); 
@@ -30,6 +32,9 @@ function displayItem(galleryItem) {
     frame.css("margin-top", -parseInt(frame.css("height"),10)/2);
     frame.css("margin-left", -parseInt(frameWidth,10)/2);
     frame.css("opacity", "1");
+    frame.click(function(event) {
+      event.stopPropagation();
+    });
 }
 
 $(document).ready(function() {
