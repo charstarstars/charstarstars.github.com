@@ -16,18 +16,16 @@ function displayItem(galleryItem) {
     
     backdrop.append(frame);
     frame.append(description); 
-
-    description.removeClass("hidden");
-    description.addClass("expanded");
-
-    frame.addClass("galleryItem");
-    frame.addClass("expanded");
     frame.append(galleryImage);
 
-    galleryImage.removeClass("hidden");
+    description.addClass("expanded");
+    frame.addClass("galleryItem");
+    frame.addClass("expanded");
 
+    description.removeClass("hidden");
+    galleryImage.removeClass("hidden");
     backdrop.removeClass("hidden");
-    
+
     frame.css("height", galleryImage.height());
     frameWidth = galleryImage.width() + $(".description.expanded").width() + 20;
     frame.css("width", frameWidth);
