@@ -11,7 +11,7 @@ function displayItem(galleryItem) {
     var frame = $("<div></div>");
     var galleryImage = galleryItem.find(".fullImage").clone();
     var description = galleryItem.find(".description").clone();
-    var backdrop = $("#backdrop");
+    var backdrop = $("#backdrop");  
     var frameWidth;
     
     backdrop.append(frame);
@@ -26,8 +26,8 @@ function displayItem(galleryItem) {
     galleryImage.removeClass("hidden");
     backdrop.removeClass("hidden");
 
-    frame.css("height", galleryImage.height());
-    frameWidth = galleryImage.width() + $(".description.expanded").width() + 20;
+    frame.css("height", galleryItem.find(".fullImage").height());
+    frameWidth = galleryItem.find(".fullImage").width() + $(".description.expanded").width() + 20;
     frame.css("width", frameWidth);
     frame.css("margin-top", -frame.height()/2);
     frame.css("margin-left", -frameWidth/2);
