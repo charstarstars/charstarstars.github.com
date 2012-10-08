@@ -27,7 +27,7 @@ function displayItem(galleryItem) {
     frame.addClass("expanded");
     frame.append(galleryImage);
     frame.css("height", galleryImage.height());
-    frameWidth = galleryImage.width() + $(".description.expanded").width() + parseInt(frame.css('padding'));
+    frameWidth = galleryImage.width() + $(".description.expanded").width() + 20;
     frame.css("width", frameWidth);
     frame.css("margin-top", -parseInt(frame.css("height"),10)/2);
     frame.css("margin-left", -parseInt(frameWidth,10)/2);
