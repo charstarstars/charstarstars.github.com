@@ -2,15 +2,17 @@ function makeLightbox() {
     // var galleries = $(".galleryItem");
     $(".galleryItem").each(function() {
         $(this).click(function() {
-            displayItem($(this));
+            var galleryItem = $(this)
+            var galleryImage = galleryItem.find(".fullImage").clone();
+            var description = galleryItem.find(".description").clone();
+
+            displayItem(galleryItem, galleryImage,description);
         });
     });
 }
 
-function displayItem(galleryItem) {
+function displayItem(galleryItem, galleryImage, description) {
     var frame = $("<div></div>");
-    var galleryImage = galleryItem.find(".fullImage").clone();
-    var description = galleryItem.find(".description").clone();
     var backdrop = $("#backdrop");
     var frameWidth;
     
