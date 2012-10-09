@@ -155,7 +155,6 @@ h4 {
     float: left;
     position: absolute;
     bottom: 40px;
-
 }
 
 .gallery img {
@@ -189,6 +188,25 @@ h4 {
     h2 {
         font-size: 32px;
     }
+
+
+    .galleryItem.expanded .fullImage {
+        margin-left: 0px;
+        float: none;
+        /*width: 100%;*/
+    }
+
+ /*   .galleryItem.expanded .fullImage img {
+        width: 100%;
+    }*/
+
+    .description.expanded {
+        float: none;
+        position: relative;
+        margin-bottom: 20px;
+        bottom: 0px;
+    }
+
 }
 
 @media screen and (max-width: 650px) {
@@ -196,7 +214,21 @@ h4 {
     #content .section {
         padding-top: 100px;
     }
+    .gallery .galleryItem {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin: 0px;
+    }
 
+
+}
+
+@media screen and (max-width: 360px) {
+
+    #content .section {
+        padding-top: 140px;
+    }
 }
 
 
