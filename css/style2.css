@@ -194,19 +194,24 @@ h4 {
     }
 
 
+}
+
+/* iPad portrait */
+@media screen and (max-width: 768px) {
+    
+
     .galleryItem.expanded .fullImage {
- /*       margin-left: 0px;
-        float: none;*/
+        margin-left: 0px;
+        float: none;
         /*width: 100%;*/
     }
-/*
+
     .description.expanded {
         float: none;
         position: relative;
         margin-bottom: 20px;
         bottom: 0px;
-    }*/
-
+    }
 
 }
 

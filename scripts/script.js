@@ -27,11 +27,23 @@ function displayItem(galleryItem) {
     backdrop.removeClass("hidden");
 
     setTimeout(function() {
-        frame.css("height", galleryImage.height());
-        frameWidth = galleryImage.width() + $(".description.expanded").width() + 20;
-        frame.css("width", frameWidth);
+        if(window.innerWidth > 768) {
+
+          description.css("width", 300);
+          frame.css("height", galleryImage.height());
+          frameWidth = galleryImage.width() + $(".description.expanded").width() + 20;
+          frame.css("width", frameWidth);
+
+        } else {
+          description.css("width", galleryImage.find("img").width());
+          frame.css("height", galleryImage.height() + description.height() + 15);
+          frameWidth = galleryImage.find("img").width();
+          frame.css("width", frameWidth);
+
+        }
+
         frame.css("margin-top", -frame.height()/2);
-        frame.css("margin-left", -frameWidth/2);
+        frame.css("margin-left", -frame.width()/2);
         frame.css("opacity", "1");
         frame.click(function(event) {
           event.stopPropagation();
