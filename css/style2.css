@@ -4,22 +4,14 @@
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
-
-#backdrop {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: rgba(0,0,0,.8);
-    z-index: 5;
-}
-
 body {
-    font-family: 'Muli', 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
     font-style: normal;
+    font-weight: 200;
     font-size: 20px;
-    letter-spacing: -1px;
     color: #777;
     background-color: #f3f3f3;
+    padding: 10% 20px;
 }
 
 a {
@@ -28,7 +20,7 @@ a {
 }
 
 p {
-    margin-bottom: 10px;
+    margin: 15px 0;
 }
 
 a:hover {
@@ -38,53 +30,10 @@ a:hover {
     border-width: 1px;
 }
 
-header {
-    display: block;
-    opacity: .9;
-    width: 100%;
-    background-color: #fff;
-    position: fixed;
-    top:0;
-    text-align: center;
-    z-index: 10;
-}
-
-header a {
-    font-family: 'Courgette', 'Muli', 'Arial', sans-serif;
-    display: inline-block;
-    color: #f3f3f3;
-    margin: 12px;
-    font-size: 20px;
-    font-style: normal;
-    position: relative;
-    text-decoration: none;
-    width: 150px;
-}
-
-header a .highlight {
-    font-family: 'Muli', 'Arial', sans-serif;
-    letter-spacing: -1px;
-    color: #FF8500;
-}
-
-header a:hover {
-    color: #777;
-    border-width: 0px;
-}
-
-/*************************************
-    body stuff
-*************************************/
-
 #content {
-    width: 790px;
+    max-width: 600px;
     margin-right: auto;
     margin-left: auto;
-}
-
-#content .section {
-    padding-top: 50px;
-    min-height: 900px;
 }
 
 h1, h2 {
@@ -100,147 +49,3 @@ h1 {
 p {
     line-height: 150%;
 }
-
-h2 {
-    font-size: 40px;
-    line-height: 150%;
-}
-
-h3 {
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 150%;
-
-}
-
-h4 {
-    font-size: 16px;
-    line-height: 140%;
-    margin-top: 8px;
-}
-
-.gallery {
-    /*text-align: center;*/
-}
-.gallery .galleryItem {
-    display: inline-block;
-    margin: 15px;
-    width: 360px;
-    height: 200px;
-    overflow: hidden;
-}
-
-.gallery .galleryItem:hover {
-    cursor: pointer;
-    box-shadow: 1px 1px 10px #666;
-
-}
-
-.galleryItem.expanded {
-    transition: opacity 1s;
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -o-transition: opacity 1s;
-
-    opacity: 0;
-    background-color: #fff;
-    width: 0px;
-    height: 0px;
-    position: fixed;
-    top:50%;
-    left: 50%;
-    padding: 20px;
-}
-
-.galleryItem.expanded .fullImage {
-    margin-left: 20px;
-    float: right;
-}
-
-.galleryImage img {
-    width: 100%;
-}
-
-.description.expanded {
-    width: 300px;
-    float: left;
-    position: absolute;
-    bottom: 40px;
-}
-
-.gallery img {
-    position: relative;
-    width: 100%;
-}
-
-.hidden {
-    display: none;
-}
-
-/*************************************
-    fluid layout stuff
-*************************************/
-
-
-@media screen and (max-width: 900px) {
-    header a {
-        width: 100px;
-        font-size: 16px;
-    }
-    #content {
-        width: auto;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    h1 {
-        font-size: 54px;
-    }
-    h2 {
-        font-size: 32px;
-    }
-
-
-}
-
-/* iPad portrait */
-@media screen and (max-width: 768px) {
-    
-
-    .galleryItem.expanded .fullImage {
-        margin-left: 0px;
-        float: none;
-    }
-
-    .description.expanded {
-        float: none;
-        position: relative;
-        margin-bottom: 20px;
-        bottom: 0px;
-    }
-
-}
-
-@media screen and (max-width: 650px) {
-
-    #content .section {
-        padding-top: 100px;
-    }
-    .gallery .galleryItem {
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        margin: 0px;
-    }
-
-
-}
-
-@media screen and (max-width: 360px) {
-
-    #content .section {
-        padding-top: 140px;
-    }
-}
-
-
