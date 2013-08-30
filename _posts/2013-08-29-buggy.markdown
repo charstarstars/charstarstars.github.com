@@ -1,0 +1,11 @@
+---
+layout: project
+title: "Buggy"
+categories: work
+thumb: /assets/images/buggy-fullsize.png
+tags: graphic design
+deliverables: 
+tools: Illustrator, InDesign, Photoshop
+published: no
+---
+About Passion Pit

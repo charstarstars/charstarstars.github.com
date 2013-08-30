@@ -1,0 +1,22 @@
+---
+layout: default
+title: life
+---
+
+<div class="life">
+  <p class="description">
+    Sometimes char**s means more than just C code. You'll find here an array of strings carefully ajoined to create meaning. 
+  </p>
+  <ul class="posts">
+    {% for post in site.posts %}
+      {% if post.categories contains 'life' %}
+      <li class="post">
+        <h2><a href="{{ post.url }}" class="title">{{ post.title }}</a></h2>
+        <p class="meta">{{ post.date | date_to_string }}</p>
+        {{ post.excerpt }}
+        <a href="{{ post.url }}" class="continue">Continue</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
