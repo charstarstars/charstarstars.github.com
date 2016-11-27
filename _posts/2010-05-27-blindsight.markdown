@@ -6,6 +6,8 @@ thumb: /assets/images/blindsight-fullsize.png
 tags: art
 tools: Photoshop, Paint Tool SAI
 published: yes
+media: Digital
+deliverables: digital painting
 ---
 
 <div class="with-caption">
