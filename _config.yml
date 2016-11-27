@@ -1,5 +1,5 @@
 name: Ariel writes things
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 description: An array of strings
 url: http://www.helloarielliu.com/life
