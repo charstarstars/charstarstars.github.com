@@ -6,7 +6,8 @@ thumb: /assets/images/blindsight-fullsize.png
 tags: art
 deliverables: 
 tools: Photoshop, Paint Tool SAI
-published: no
+published: yes
 ---
 
+<img src="/assets/images/blindsight-fullsize.png" alt="Blindsight by Ariel Liu" />
 Blindsight
