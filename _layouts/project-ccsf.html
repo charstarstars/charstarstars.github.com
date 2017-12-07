@@ -1,0 +1,26 @@
+---
+layout: default-ccsf
+---
+
+<!-- work details section -->
+<section id="work-detail" class="section work-detail">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 work-detail-margin detail-image">
+
+        <div class="work-image">
+        	{% for image in page.images %}
+        	<p><img src="{{ image.src }}" alt="{{ image.alt }}"></p>
+        	{% endfor %}
+        </div>
+      </div>
+      <div class="col-md-4 work-detail-margin detail-contentbox">
+        <div class="detail-content">
+          <h4>{{ page.title }}</h4>
+          {{ content }}
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- work details section --> 
