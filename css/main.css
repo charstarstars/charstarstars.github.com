@@ -59,6 +59,9 @@ ul.posts span {
   font-size: 1.3em;
   text-align: justify;
   width: 35em;
+  max-width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
   line-height: 1.8em;
   margin: 0 auto;
 }
